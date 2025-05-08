@@ -53,7 +53,7 @@
               is assosiated with each user.
 
 
-    PATCH /task/update_task
+    PATCH /task/update_task 
 
             * Modify a specific task created by a user.
 
