@@ -1,5 +1,5 @@
-DROP TABLE IF EXIST users;
-DROP TABLE IF EXIST tasksUsers;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS tasksUsers;
 
 CREATE TABLE users(
     userId SERIAL PRIMARY KEY,
@@ -13,7 +13,7 @@ CREATE TABLE users(
 
 CREATE TABLE tasks(
     taskId SERIAL PRIMARY KEY,
-    userId INT NOT NULL REFERENCE users(userId)
+    userId INT NOT NULL REFERENCES users(userId),
     title VARCHAR(250) NOT NULL,
     description TEXT NOT NULL,
     createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
