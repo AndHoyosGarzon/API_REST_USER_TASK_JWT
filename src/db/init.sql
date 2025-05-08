@@ -1,9 +1,9 @@
 DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS tasksUsers;
+DROP TABLE IF EXISTS tasks;
 
 CREATE TABLE users(
     userId SERIAL PRIMARY KEY,
-    firtsName VARCHAR(250) NOT NULL,
+    firstname VARCHAR(250) NOT NULL,
     lastname VARCHAR(250) NOT NULL,
     email VARCHAR(250) NOT NULL UNIQUE,
     password VARCHAR(250) NOT NULL,
