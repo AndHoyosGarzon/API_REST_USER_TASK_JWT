@@ -15,6 +15,6 @@ tasksRouter.post("/create_task", accessToken, creatNewTask);
 
 tasksRouter.patch("/update_task", accessToken, updateTask);
 
-tasksRouter.delete("/delete_Task", accessToken, deleteTask);
+tasksRouter.delete("/delete_task", accessToken, deleteTask);
 
 export default tasksRouter;
